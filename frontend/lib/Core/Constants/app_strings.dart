@@ -9,6 +9,13 @@ class AppInfo {
   static const String postDesc = 'Post Description';
   static const String createPost = 'Create Post';
 }
+class GetStorageKeys {
+  static const String authInfo = 'authInfo';
+  static const String firstTime = "first_time";
+  static const String credentials = "credentials";
+  static const String languageCode = 'language_code';
+  static const String countryCode = 'country_code';
+}
 
 class ImagePath {
   static const String assets = 'assets/';
@@ -20,6 +27,7 @@ class ImagePath {
 
 class ValidationMessages {
   static const String emptyEmail = "Email cannot be empty";
+  static const String username = "Username cannot be empty";
   static const String invalidEmail = "Please enter a valid email address";
   static const String emptyPassword = "Password cannot be empty";
   static const String shortPassword =
@@ -27,6 +35,39 @@ class ValidationMessages {
   static const String emptyConfirmPassword = "Confirm Password cannot be empty";
   static const String passwordMismatch = "Passwords do not match";
   static const String allRequired = "All fields are required";
+}
+class AppStrings {
+  static const String username = 'Username';
+  // static const String welcomeTitle = 'Welcome to Post Creater';
+  // static const String signUp = 'SIGNUP';
+  // static const String signIn = 'SIGNIN';
+  // static const String enterEmail = 'Enter Your Email';
+  // static const String createPostTitle = 'CREATE NEW POST';
+  // static const String postTitle = 'Post Title';
+  // static const String postDesc = 'Post Description';
+  // static const String createPost = 'Create Post';
+}
+class ActionText {
+  static const String signIn = "Sign In";
+  static const String singUp = "Sign Up";
+  static const String sendCode = "Send Code";
+  static const String submit = "Submit";
+  static const String submitReport = "Submit Report";
+  static const String save = "Save";
+  static const String resendCode = "Resend Code";
+  static const String getStarted = "Get Started";
+  static const String addVehicle = "Add Vehicle";
+  static const String deleteVehicle = "Delete Vehicle";
+  static const String next = "Next";
+  static const String skip = "Skip";
+  static const String logout = "Logout";
+
+  static const String yes = "Yes";
+  static const String no = "No";
+  static const String cancel = "Cancel";
+  static const String delete = "Delete";
+  static const String edit = "Edit";
+  static const String update = "Update";
 }
 
 class ToastMsg {
@@ -50,4 +91,16 @@ class ToastMsg {
   static const String validUsernameHint = "Enter Valid Username";
   static const String validPassHint = "Enter Valid Password";
   static const String linkError = "Unable to launch url";
+}
+class ErrorCode {
+  static const String connectionAbort = "Software caused connection abort";
+  static const String failedHost = "Failed host lookup";
+  static const String invalidHtml = "<!DOCTYPE html>";
+  static const String unexpectedError = "Unexpected error";
+  static const String validationError = "Validation error";
+  static const String serverError = "Server error";
+  static const String failedToParseResponse = "Failed to parse response";
+  static const String invalidHTTPMethod = "Invalid HTTP method";
+  static const String unAuthorizedAccess =
+      "Unauthorized access. Please login again.";
 }

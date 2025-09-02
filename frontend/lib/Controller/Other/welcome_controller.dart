@@ -3,14 +3,15 @@ import 'package:get/get.dart';
 
 class WelcomeController extends GetxController {
   void login() {
-  try {
     Get.toNamed(AppRoutes.loginScreen);
-  } catch (e, stack) {
-    print("Navigation error: $e");
-    print(stack);
-  }
-}
 
+    // try {
+    //   Get.toNamed(AppRoutes.loginScreen);
+    // } catch (e, stack) {
+    //   print("Navigation error: $e");
+    //   print(stack);
+    // }
+  }
 
   void signUp() {
     Get.toNamed(AppRoutes.signUpScreen);

@@ -43,6 +43,14 @@ class Body extends GetView<SignupController> {
                 validator: (value) => ValidationHelper.validateEmail(value),
                 
               ),
+              RoundedInputField(
+                controller: controller.usernameController,
+                hintText: AppStrings.username,
+                color: kPrimaryColor,
+                textColor: kPrimaryColor,
+                validator: (value) => ValidationHelper.validateEmptyUsername(value),
+                
+              ),
           
               // SizedBox(height: size.height * 0.3),
               RoundedPasswordField(
@@ -52,7 +60,7 @@ class Body extends GetView<SignupController> {
               ),
               RoundedButton(
                 text: AppInfo.signUp,
-                press: controller.login,
+                press: controller.singUp,
           
                 color: AppColors.primary,
               ),

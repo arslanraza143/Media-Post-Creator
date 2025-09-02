@@ -18,6 +18,12 @@ class ValidationHelper {
     }
     return null;
   }
+  static String? validateEmptyUsername(String? username) {
+    if (username == null || username.isEmpty) {
+      return ValidationMessages.username;
+    }
+    return null;
+  }
 
   static String? validatePassword(String? password) {
     if (password == null || password.isEmpty) {

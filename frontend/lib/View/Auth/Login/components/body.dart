@@ -47,9 +47,9 @@ class Body extends GetView<LoginController> {
 
                 SizedBox(height: size.height * 0.03),
                 RoundedInputField(
-                  controller: controller.emailController,
-                  validator: (value) => ValidationHelper.validateEmail(value),
-                  hintText: AppInfo.enterEmail,
+                  controller: controller.usernameController,
+                  validator: (value) => ValidationHelper.validateEmptyUsername(value),
+                  hintText: AppStrings.username,
                   color: AppColors.primary,
                   textColor: Colors.white,
                 ),

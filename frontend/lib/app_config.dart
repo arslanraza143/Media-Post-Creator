@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart' as dot_env;
+import 'package:frontend/Controller/Auth/auth_controller.dart';
 import 'package:frontend/Controller/Other/connection_manager_controller.dart';
 import 'package:frontend/Core/Utils/app_colors.dart';
 import 'package:get/get.dart';
@@ -11,7 +12,7 @@ class AppConfig {
     await dot_env.dotenv.load();
     Get.put(ConnectionManagerController());
     await GetStorage.init();
-    //Get.lazyPut(() => AuthController(), fenix: true);
+    Get.lazyPut(() => AuthController(), fenix: true);
     setSystemChromeTheme();
     setDefaultOrientation();
   }
